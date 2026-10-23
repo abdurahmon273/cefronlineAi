@@ -56,8 +56,8 @@ return [
             'driver' => 'monolog',
             'handler' => Monolog\Handler\TelegramBotHandler::class,
             'handler_with' => [
-                'apiKey' => env('TELEGRAM_BOT_API_KEY', '8672157080:AAE2rBWtCdbb5mHRW8dLbYhWsj2_05wCCQo'),
-                'channel' => '5487863592',
+                'apiKey' => env('TELEGRAM_BOT_API_KEY'),
+                'channel' => env('TELEGRAM_LOG_CHAT_ID'),
             ],
             'level' => 'error',
         ],
@@ -65,8 +65,8 @@ return [
             'driver' => 'monolog',
             'handler' => Monolog\Handler\TelegramBotHandler::class,
             'handler_with' => [
-                'apiKey' => env('TELEGRAM_BOT_API_KEY', '8672157080:AAE2rBWtCdbb5mHRW8dLbYhWsj2_05wCCQo'),
-                'channel' => '8122854317',
+                'apiKey' => env('TELEGRAM_BOT_API_KEY'),
+                'channel' => env('TELEGRAM_LOG_CHAT_ID_2', env('TELEGRAM_LOG_CHAT_ID')),
 //                'parseMode' => null,
             ],
             'level' => 'error',
