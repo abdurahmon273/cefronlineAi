@@ -1,0 +1,20 @@
+{
+    "private": true,
+    "scripts": {
+        "dev": "vite",
+        "build": "vite build"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "axios": "^1.1.2",
+        "laravel-vite-plugin": "^2.0.1",
+        "postcss": "^8.4.49",
+        "tailwindcss": "^3.4.17",
+        "vite": "^7.2.7"
+    },
+    "dependencies": {
+        "cloud-cli": "^1.1.7",
+        "jodit": "^4.9.14",
+        "jodit-react": "^5.2.38"
+    }
+}

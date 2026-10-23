@@ -1,0 +1,11 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "N72LCPWT92.uz.felix.tm.school",
+        "paths": ["/auth-callback*"]
+      }
+    ]
+  }
+}

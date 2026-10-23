@@ -1,0 +1,39 @@
+
+html, body { height: 100%; }
+body { margin: 0; overflow: hidden; }
+
+/*      helper           */
+.app-root { height: 100%; width: 100%; display: flex; flex-direction: column; }
+.app-nav  { height: 10%; }     /* navbar height in % */
+.app-main { height: 90%; }     /* main height in % */
+
+/*      textSize        */
+
+.text-1{ font-size: 18px; }
+.text-2{ font-size: 20px; }
+.text-3{ font-size: 24px; }
+.text-4{ font-size: 28px; }
+.text-5{ font-size: 32px; }
+.text-6{ font-size: 36px; }
+.text-7{ font-size: 40px; }
+.text-8{ font-size: 44px; }
+.text-9{ font-size: 48px; }
+
+.part-btn-active {
+    border-color: #06b6d4;
+    background: rgba(0, 217, 255, 0.53);
+    color: black;
+}
+
+.primary-btn {
+    background: #06b6d4;
+    background: rgba(0, 217, 255, 0.53);
+    border: none;
+    box-shadow: #06b6d4 1px 1px 0 0 ;
+    color: black;
+}
+
+.part-block-div{
+    background: #06b6d4;
+    background: rgba(0, 217, 255, 0.53);
+}

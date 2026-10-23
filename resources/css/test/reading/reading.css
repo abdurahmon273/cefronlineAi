@@ -1,0 +1,115 @@
+
+html, body { height: 100%; }
+body { margin: 0; overflow: hidden; }
+
+/*      helper           */
+.app-root { height: 100%; width: 100%; display: flex; flex-direction: column; }
+.app-nav  { height: 10vh; }     /* navbar height in % */
+.app-main { height: 90vh; }     /* main height in % */
+
+/*      textSize         */
+.text-1 { font-size: 12px; line-height: 1.3; }
+.text-2 { font-size: 14px; line-height: 1.35; }
+.text-3 { font-size: 16px; line-height: 1.4; }
+.text-4 { font-size: 18px; line-height: 1.45; }
+.text-5 { font-size: 20px; line-height: 1.5; }
+.text-6 { font-size: 22px; line-height: 1.55; }
+.text-7 { font-size: 24px; line-height: 1.6; }
+.text-8 { font-size: 26px; line-height: 1.65; }
+.text-9 { font-size: 28px; line-height: 1.7; }
+
+
+/*      textSize         */
+.answer-text { white-space: normal; word-break: break-word; overflow-wrap: anywhere; }
+
+.answer-text-1 { font-size: 10px; line-height: 1.3; }
+.answer-text-2 { font-size: 12px; line-height: 1.35; }
+.answer-text-3 { font-size: 14px; line-height: 1.4; }
+.answer-text-4 { font-size: 16px; line-height: 1.45; }
+.answer-text-5 { font-size: 18px; line-height: 1.5; }
+.answer-text-6 { font-size: 20px; line-height: 1.55; }
+.answer-text-7 { font-size: 22px; line-height: 1.6; }
+.answer-text-8 { font-size: 24px; line-height: 1.65; }
+.answer-text-9 { font-size: 26px; line-height: 1.7; }
+
+
+.time-text-div{
+    margin-left: 4px;
+}
+.active-btn-color {
+    background-color: #06b6d4; /* gray-900 */
+}
+.part-btn {
+    border-color: #9ca3af; /* gray-400 */
+    background: #ffffff;
+    color: #111827;
+}
+
+.part-btn-active {
+    border-color: #06b6d4;
+    background: rgba(0, 217, 255, 0.53);
+    color: black;
+}
+
+
+/* custom select css ------> */
+/* Custom Select (portal dropdown) */
+.cs-wrap { width: 100%; }
+
+.cs-btn{
+    width: 100%;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    gap:12px;
+    padding:10px 12px;
+    border:1px solid #d1d5db; /* gray-300 */
+    border-radius:14px;
+    background:#fff;
+    font-weight:600;
+}
+
+.cs-btn:active{ transform: scale(0.99); }
+
+.cs-label{
+    min-width:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+    color:#111827; /* gray-900 */
+}
+
+.cs-chevron{ color:#6b7280; } /* gray-500 */
+
+.cs-panel{
+    background:#fff;
+    border:1px solid #e5e7eb; /* gray-200 */
+    border-radius:16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,.12);
+    overflow:hidden; /* list scrollni ichida ushlaydi */
+}
+
+.cs-panel-list{
+    padding:6px;
+    /* maxHeight & overflowY JSda qo‘yiladi */
+}
+
+.cs-option{
+    width:100%;
+    text-align:left;
+    padding:10px 10px;
+    border-radius:12px;
+    border:0;
+    background:transparent;
+    cursor:pointer;
+    font-weight:600;
+    color:#111827;
+}
+
+.cs-option:hover{
+    background:#f3f4f6; /* gray-100 */
+}
+
+/* <--------- custom select css */
+
+

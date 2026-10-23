@@ -1,0 +1,13 @@
+[
+  {
+    "relation": ["delegate_permission/common.handle_all_urls"],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.muzaffar_teacher_uz.tm_school",
+      "sha256_cert_fingerprints": [
+        "13:1B:59:47:F9:93:88:46:CE:77:E8:A8:DA:E1:CA:39:F3:4D:45:1F:5F:6E:EB:15:7E:56:6B:A1:74:67:CC:AF",
+        "CD:9A:DC:B6:A3:FE:E7:B9:5E:2E:52:04:E8:EE:26:35:CA:58:2F:48:90:32:75:DF:00:C1:0E:65:DD:11:F6:0C"
+      ]
+    }
+  }
+]
