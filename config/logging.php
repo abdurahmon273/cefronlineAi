@@ -53,22 +53,17 @@ return [
     'channels' => [
 
         'telegram' => [
-            'driver' => 'monolog',
-            'handler' => Monolog\Handler\TelegramBotHandler::class,
-            'handler_with' => [
-                'apiKey' => env('TELEGRAM_BOT_API_KEY'),
-                'channel' => env('TELEGRAM_LOG_CHAT_ID'),
-            ],
+            'driver' => 'custom',
+            'via' => App\Logging\SafeTelegramLogger::class,
+            'token' => env('TELEGRAM_BOT_API_KEY'),
+            'chat_id' => env('TELEGRAM_LOG_CHAT_ID'),
             'level' => 'error',
         ],
         'telegram2' => [
-            'driver' => 'monolog',
-            'handler' => Monolog\Handler\TelegramBotHandler::class,
-            'handler_with' => [
-                'apiKey' => env('TELEGRAM_BOT_API_KEY'),
-                'channel' => env('TELEGRAM_LOG_CHAT_ID_2', env('TELEGRAM_LOG_CHAT_ID')),
-//                'parseMode' => null,
-            ],
+            'driver' => 'custom',
+            'via' => App\Logging\SafeTelegramLogger::class,
+            'token' => env('TELEGRAM_BOT_API_KEY'),
+            'chat_id' => env('TELEGRAM_LOG_CHAT_ID_2', env('TELEGRAM_LOG_CHAT_ID')),
             'level' => 'error',
         ],
 
