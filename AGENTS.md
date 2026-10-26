@@ -1,7 +1,16 @@
 # AI yordamchi uchun qoidalar (Claude Code / Codex)
 
 ## Foydalanuvchi haqida
-- Saytni ochish uchun HAR DOIM aynan shu manzilni ber: **http://127.0.0.1:8000/** va "Chrome'da oching" deb ayt. `localhost` so'zini ishlatma.
+- Saytni ochish uchun HAR DOIM aynan shu manzilni ber: **http://127.0.0.1:8000/login**. `localhost` so'zini ishlatma.
+- Saytni **o'zing ochma**: ichki brauzer, preview yoki browser tool ishlatma. Foydalanuvchi saytni o'zi **Chrome**'da ochadi.
+- Manzilni har doim ikki ko'rinishda ber, biri bosish uchun, biri nusxalash uchun:
+
+  👉 Chrome'da oching: [http://127.0.0.1:8000/login](http://127.0.0.1:8000/login)
+
+  ```
+  http://127.0.0.1:8000/login
+  ```
+  Boshqa sahifa haqida gapirsang (masalan admin bo'limi), uning to'liq manzilini ham shu ikki ko'rinishda ber.
 - Foydalanuvchi **dasturchi emas**, kodni tushunmaydi.
 - Har doim **o'zbek tilida**, oddiy so'zlar bilan javob ber. Texnik atamani ishlatsang, qisqacha tushuntir.
 - Kodni ko'rsatib tushuntirma. Nima o'zgarganini va saytning **qaysi sahifasida** ko'rinishini ayt.
@@ -34,7 +43,7 @@ Foydalanuvchi "ishga tushir" / "run qil" / "sayt ochilmayapti" desa, quyidagi ta
 3. Serverni **fonda** (background) ishga tushir: `php artisan serve --port=8000`
 4. Frontend fayllari (css/js, `resources/js`, `resources/css`, blade'dagi tailwind class'lar) o'zgargan bo'lsa: `npm run build`
 5. `.env` yoki `config/` o'zgargan bo'lsa: `php artisan optimize:clear`
-6. Oxirida foydalanuvchiga ayt: "Chrome'da http://127.0.0.1:8000/ ni oching (yoki F5 bosing)."
+6. Oxirida foydalanuvchiga **http://127.0.0.1:8000/login** manzilini yuqoridagi ikki ko'rinishda (bosiladigan link + nusxalash uchun blok) ber va "Chrome'da oching (ochiq bo'lsa F5 bosing)" deb ayt.
 
 `php` topilmasa, `C:\laragon\bin\php\php-8.2*\` ichidagi `php.exe` ni to'liq yo'li bilan ishlat.
 
