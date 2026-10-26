@@ -8,7 +8,7 @@ Salom. Men dasturchi emasman, kodni tushunmayman. Bu loyiha qoidalari AGENTS.md 
 Hozir:
 1. Saytni ishga tushir (MySQL va php artisan serve --port=8000). Laragon yopiq bo'lsa ham o'zing yoqishga harakat qil.
 2. Hozirgi holatni git commit qilib saqlab qo'y.
-3. Tayyor bo'lgach, menga o'zbek tilida qisqa qilib ayt: sayt ishlayaptimi va qaysi manzilni ochishim kerak.
+3. Tayyor bo'lgach, menga o'zbek tilida qisqa qilib ayt: sayt ishlayaptimi. Ochish uchun manzilni aynan http://127.0.0.1:8000/ deb ber va "Chrome'da oching" deb yoz.
 
 Keyin men senga saytda nimani o'zgartirish kerakligini yozaman. Har bir o'zgarishdan keyin nima qilganingni va qaysi sahifada ko'rishim mumkinligini oddiy tilda tushuntir.
 ```

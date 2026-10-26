@@ -1,6 +1,7 @@
 # AI yordamchi uchun qoidalar (Claude Code / Codex)
 
 ## Foydalanuvchi haqida
+- Saytni ochish uchun HAR DOIM aynan shu manzilni ber: **http://127.0.0.1:8000/** va "Chrome'da oching" deb ayt. `localhost` so'zini ishlatma.
 - Foydalanuvchi **dasturchi emas**, kodni tushunmaydi.
 - Har doim **o'zbek tilida**, oddiy so'zlar bilan javob ber. Texnik atamani ishlatsang, qisqacha tushuntir.
 - Kodni ko'rsatib tushuntirma. Nima o'zgarganini va saytning **qaysi sahifasida** ko'rinishini ayt.
@@ -10,7 +11,7 @@
 ## Loyiha
 - Laravel 10 (PHP 8.2), MySQL, Livewire, Blade, Vite. Windows + Laragon.
 - Papka: `C:\laragon\www\cefronlineAi`
-- Sayt faqat localda ishlaydi: http://localhost:8000
+- Sayt faqat localda ishlaydi: http://127.0.0.1:8000/
 - Saytning ikki tomoni bor:
   - **user tomoni**: oddiy Chrome oynasida tekshiriladi;
   - **admin tomoni**: Chrome Incognito oynasida tekshiriladi.
@@ -33,7 +34,7 @@ Foydalanuvchi "ishga tushir" / "run qil" / "sayt ochilmayapti" desa, quyidagi ta
 3. Serverni **fonda** (background) ishga tushir: `php artisan serve --port=8000`
 4. Frontend fayllari (css/js, `resources/js`, `resources/css`, blade'dagi tailwind class'lar) o'zgargan bo'lsa: `npm run build`
 5. `.env` yoki `config/` o'zgargan bo'lsa: `php artisan optimize:clear`
-6. Oxirida foydalanuvchiga ayt: "Chrome'da http://localhost:8000 ni oching (yoki F5 bosing)."
+6. Oxirida foydalanuvchiga ayt: "Chrome'da http://127.0.0.1:8000/ ni oching (yoki F5 bosing)."
 
 `php` topilmasa, `C:\laragon\bin\php\php-8.2*\` ichidagi `php.exe` ni to'liq yo'li bilan ishlat.
 
@@ -55,9 +56,9 @@ Foydalanuvchi "ishga tushir" / "run qil" / "sayt ochilmayapti" desa, quyidagi ta
 9. Katta o'zgarish (ko'p fayl, dizaynni to'liq qayta qilish, login/to'lov/AI tekshiruv logikasi) bo'lsa, avval rejani 3-5 ta oddiy gapda tushuntir va ruxsat so'ra.
 
 ## O'zgarishdan keyin
-- Sayt ishlayotganini o'zing tekshir: `php artisan route:list` xatosiz chiqsin. Kerak bo'lsa `curl -s -o NUL -w "%{http_code}" http://localhost:8000` qilib ko'r, 200 yoki 302 bo'lishi kerak.
+- Sayt ishlayotganini o'zing tekshir: `php artisan route:list` xatosiz chiqsin. Kerak bo'lsa `curl -s -o NUL -w "%{http_code}" http://127.0.0.1:8000/` qilib ko'r, 200 yoki 302 bo'lishi kerak.
 - Xato bo'lsa, `storage/logs/laravel.log` ning oxirini o'qib, tuzat.
 - Foydalanuvchiga quyidagilarni ayt:
   - nima o'zgardi (1-3 gap);
-  - qaysi sahifada ko'rish mumkin (to'liq manzil, masalan `http://localhost:8000/admin/...`);
+  - qaysi sahifada ko'rish mumkin (to'liq manzil, masalan `http://127.0.0.1:8000/admin/...`);
   - user tomonida yoki admin tomonida (Incognito) tekshirish kerakmi.

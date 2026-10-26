@@ -44,7 +44,7 @@ Notepad'da quyidagi qatorlarni tekshirib, shunday qiling:
 ```
 APP_ENV=local
 APP_DEBUG=true
-APP_URL=http://localhost:8000
+APP_URL=http://127.0.0.1:8000
 GOOGLE_REDIRECT_URI=http://localhost:8000/auth/google/callback
 
 DB_HOST=127.0.0.1
@@ -170,7 +170,7 @@ npm run dev
 php artisan queue:work
 ```
 
-Brauzerda oching: **http://localhost:8000**
+Brauzerda oching: **http://127.0.0.1:8000/**
 
 Terminallarni yopmang. Yopilsa, sayt to'xtaydi.
 
@@ -187,13 +187,13 @@ Terminallarni yopmang. Yopilsa, sayt to'xtaydi.
    php artisan serve --port=8000
    ```
 4. Ikkinchi terminal: `npm run dev`
-5. Brauzer: http://localhost:8000
+5. Brauzer: http://127.0.0.1:8000/
 
 ---
 
 ## 10. Tekshirish ro'yxati
 
-- [ ] `http://localhost:8000` ochiladi
+- [ ] `http://127.0.0.1:8000/` ochiladi
 - [ ] Login ishlaydi (baza ulangan)
 - [ ] Listening testida audio eshitiladi (`public/audios`)
 - [ ] Speaking'da rasmlar chiqadi (`public/speaking_images`)
@@ -225,7 +225,7 @@ Terminallarni yopmang. Yopilsa, sayt to'xtaydi.
 VS Code'da Codex chatiga topshiriq yozing, masalan:
 
 ```
-Loyihani localhost:8000 da ishga tushirishga yordam ber. SETUP_WINDOWS.md dagi qadamlarni tekshir.
+Loyihani http://127.0.0.1:8000/ da ishga tushirishga yordam ber. SETUP_WINDOWS.md dagi qadamlarni tekshir.
 ```
 
 Kod o'zgargandan keyin: PHP o'zgarishlari darhol ishlaydi. `.env` yoki `config` o'zgarsa, `php artisan optimize:clear` qiling.
